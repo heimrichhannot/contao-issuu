@@ -19,5 +19,5 @@ $GLOBALS['TL_CTE']['media']['issuu'] = 'HeimrichHannot\Issuu\ContentIssuu';
  */
 if(TL_MODE == 'FE')
 {
-	$GLOBALS['TL_JAVASCRIPT']['jquery.issuu'] = 'system/modules/issuu/assets/js/jquery.issuu.js';
+	$GLOBALS['TL_JAVASCRIPT']['jquery.issuu'] = 'system/modules/issuu/assets/js/jquery.issuu' . (!$GLOBALS['TL_CONFIG']['debugMode'] ? '.min' : '') . '.js|static';
 }
